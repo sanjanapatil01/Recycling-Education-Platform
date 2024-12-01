@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Recycle - Step by Step</title>
+  <link rel="stylesheet" href="how.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+  <aside class="sidebar">
+
+    <header class="sidebar-head">
+      <a href="#" class="header-logo">
+        <img src="th.jpg" alt="CoodingNepal">
+      </a>
+      <button class="toggler sidebar-toggler">
+        <span class="material-symbols-rounded">
+          arrow_back_ios
+          </span>
+      </button>
+    </header>
+    <nav class="sidebar-nav">
+      <ul class="nav-list primary-nav">
+        <li class="nav-item">
+          <a href="guide.html" class="nav-link">
+          <span class="nav-icon material-symbols-rounded">
+          dashboard
+            </span>  
+            <span class="nav-label"> Recycling Guide</span>
+          </a>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a href="quiz.html" class="nav-link">
+          <span class="nav-icon material-symbols-rounded">
+            analytics
+            </span>  
+            <span class="nav-label">Recycling Quiz</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="how.html" class="nav-link">
+          <span class="nav-icon material-symbols-rounded">
+          stars</span>  
+            <span class="nav-label"> How to Recycle</span>
+          </a>
+        </li>
+
+      </ul>
+    
+    <ul class="nav-list secondary-nav">
+      <li class="nav-item">
+        <a href="main.html" class="nav-link">
+        <span class="nav-icon material-symbols-rounded">
+        home
+          </span>  
+          <span class="nav-label"> Home</span>
+        </a>
+      </li>
+      </ul>
+      </nav>
+  </aside>       
+<div class="all">
+  <header>
+    <h1>How to Recycle - Step by Step</h1>
+    <p>Learn how to recycle properly and protect the environment!</p>
+  </header>
+
+  <main>
+    <section class="step-container" id="step-1">
+      <h2>Step 1: Sort Your Waste</h2>
+      <p>Start by sorting your waste into categories like paper, plastic, glass, and metal. Keep recyclables separate from regular trash.</p>
+      <button onclick="nextStep(1)">Next Step</button>
+    </section>
+
+    <section class="step-container" id="step-2">
+      <h2>Step 2: Clean and Rinse Items</h2>
+      <p>Ensure that the recyclables are clean. Rinse containers to remove food and liquids, as dirty items can contaminate the recycling stream.</p>
+      <button onclick="nextStep(2)">Next Step</button>
+    </section>
+
+    <section class="step-container" id="step-3">
+      <h2>Step 3: Check Local Guidelines</h2>
+      <p>Check your local recycling program’s guidelines. Some areas have specific rules about what can and can’t be recycled.</p>
+      <button onclick="nextStep(3)">Next Step</button>
+    </section>
+
+    <section class="step-container" id="step-4">
+      <h2>Step 4: Place Items in the Bin</h2>
+      <p>Place the clean, sorted recyclables into the appropriate bin. Make sure the bin is not overfilled, as that can cause contamination.</p>
+      <button onclick="nextStep(4)">Next Step</button>
+    </section>
+
+    <section class="step-container" id="step-5">
+      <h2>Step 5: Drop Off or Pick Up</h2>
+      <p>Once your recyclables are sorted and placed in the bin, drop them off at a recycling center or wait for your curbside pickup.</p>
+      <button onclick="endTutorial()">Finish</button>
+    </section>
+
+    <div id="completion-message" class="completion-message"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Recycling Education. All rights reserved.</p>
+  </footer>
+</div>
+
+  <script src="how.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recycling Quiz</title>
+  <link rel="stylesheet" href="quiz.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <body>
+    
+
+    <aside class="sidebar">
+
+      <header class="sidebar-head">
+        <a href="#" class="header-logo">
+          <img src="th.jpg" alt="CoodingNepal">
+        </a>
+        <button class="toggler sidebar-toggler">
+          <span class="material-symbols-rounded">
+            arrow_back_ios
+            </span>
+        </button>
+      </header>
+      <nav class="sidebar-nav">
+        <ul class="nav-list primary-nav">
+          <li class="nav-item">
+            <a href="guide.html" class="nav-link">
+            <span class="nav-icon material-symbols-rounded">
+            dashboard
+              </span>  
+              <span class="nav-label"> Recycling Guide</span>
+            </a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a href="quiz.html" class="nav-link">
+            <span class="nav-icon material-symbols-rounded">
+              analytics
+              </span>  
+              <span class="nav-label">Recycling Quiz</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="how.html" class="nav-link">
+            <span class="nav-icon material-symbols-rounded">
+            stars</span>  
+              <span class="nav-label"> How to Recycle</span>
+            </a>
+          </li>
+  
+        </ul>
+      
+      <ul class="nav-list secondary-nav">
+        <li class="nav-item">
+          <a href="main.html" class="nav-link">
+          <span class="nav-icon material-symbols-rounded">
+          home
+            </span>  
+            <span class="nav-label"> Home</span>
+          </a>
+        </li>
+        </ul>
+        </nav>
+    </aside>         
+          
+
+ 
+  <div class="quiz-container">
+    <h1>Recycling Quiz</h1>
+    
+    <!-- Part 1: Recyclable Items -->
+    <div class="question-container" id="question1">
+      <h2>Part 1: Recyclable Items</h2>
+      <p>Which of the following is recyclable?</p>
+      <ul>
+        <li><button onclick="checkAnswer(1, 'a')">a) Paper</button></li>
+        <li><button onclick="checkAnswer(1, 'b')">b) Plastic Bottle</button></li>
+        <li><button onclick="checkAnswer(1, 'c')">c) Banana Peel</button></li>
+        <li><button onclick="checkAnswer(1, 'd')">d) Aluminum Can</button></li>
+      </ul>
+      <p id="feedback1"></p>
+    </div>
+
+    <div class="question-container" id="question2">
+      <p>Which of the following is recyclable?</p>
+      <ul>
+        <li><button onclick="checkAnswer(2, 'a')">a) Cardboard</button></li>
+        <li><button onclick="checkAnswer(2, 'b')">b) Glass Bottle</button></li>
+        <li><button onclick="checkAnswer(2, 'c')">c) Plastic Spoon</button></li>
+        <li><button onclick="checkAnswer(2, 'd')">d) Aluminum Foil</button></li>
+      </ul>
+      <p id="feedback2"></p>
+    </div>
+
+    <div class="question-container" id="question3">
+      <p>Which of the following is recyclable?</p>
+      <ul>
+        <li><button onclick="checkAnswer(3, 'a')">a) Paper Bag</button></li>
+        <li><button onclick="checkAnswer(3, 'b')">b) Plastic Straw</button></li>
+        <li><button onclick="checkAnswer(3, 'c')">c) Milk Carton</button></li>
+        <li><button onclick="checkAnswer(3, 'd')">d) Tin Can</button></li>
+      </ul>
+      <p id="feedback3"></p>
+    </div>
+
+    <!-- Part 2: Non-Recyclable Items -->
+    <div class="question-container" id="question4">
+      <h2>Part 2: Non-Recyclable Items</h2>
+      <p>Which of the following is not recyclable?</p>
+      <ul>
+        <li><button onclick="checkAnswer(4, 'a')">a) Paper Bag</button></li>
+        <li><button onclick="checkAnswer(4, 'b')">b) Plastic Cup</button></li>
+        <li><button onclick="checkAnswer(4, 'c')">c) Glass Bottle</button></li>
+        <li><button onclick="checkAnswer(4, 'd')">d) Pizza Box</button></li>
+      </ul>
+      <p id="feedback4"></p>
+    </div>
+
+    <div class="question-container" id="question5">
+      <p>Which of the following is not recyclable?</p>
+      <ul>
+        <li><button onclick="checkAnswer(5, 'a')">a) Aluminum Can</button></li>
+        <li><button onclick="checkAnswer(5, 'b')">b) Plastic Water Bottle</button></li>
+        <li><button onclick="checkAnswer(5, 'c')">c) Plastic Grocery Bag</button></li>
+        <li><button onclick="checkAnswer(5, 'd')">d) Cardboard Box</button></li>
+      </ul>
+      <p id="feedback5"></p>
+    </div>
+
+    <!-- Add more questions up to question 10 similarly -->
+  </div>
+
+
+
+  
+  
+
+  <script src="quiz.js"></script>
+</body>
+</html>

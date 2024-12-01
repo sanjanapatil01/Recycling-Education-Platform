@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  min-height: 100vh;
+  background: linear-gradient(#a6d39659,#cbe4ff);
+
+
+}
+.sidebar{
+  background: linear-gradient(to bottom,rgb(91, 167, 91),green);
+  width: 270px;
+  position: fixed;
+  margin: 16px;
+  border-radius: 16px;
+  height: 95vh;
+  transition: 0.4s ease;
+
+}
+.sidebar.collapsed{
+  width: 85px;
+}
+.sidebar-head{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 20px;
+
+}
+.sidebar-head .header-logo img{
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+  display: block;
+  border-radius: 50%;
+}
+.sidebar-head .toggler{
+  position: absolute;
+  right: 20px;
+  display: flex;
+  align-items: center;
+justify-content: center;
+  height: 35px;
+  width: 35px;
+  background: #fff;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  color: #151a2d;
+  transition: 0.4s ease;
+}
+.sidebar.collapsed .sidebar-head .toggler{
+  transform: translate(-4px,65px);
+}
+.sidebar-head .toggle:hover{
+  background: #dde4fb;
+}
+.sidebar-head .toggle span{
+  font-size:1.75rem ;
+  transition: 0.4s ease;
+}
+.sidebar.collapsed .sidebar-head .toggler span{
+  transform: rotate(180deg);
+}
+.sidebar-nav  .nav-list{
+list-style: none;
+display: flex;
+flex-direction: column;
+gap: 4px;
+padding: 0 13px;
+transform: translateY(15px);
+transition: 0.4s ease;
+}
+.sidebar.collapsed .sidebar-nav .primary-nav{
+  transform: translate(-5px,65px);
+}
+.sidebar-nav .nav-link{
+  color: #fff;
+  padding: 12px 15px;
+  display: flex;
+  gap: 12px;
+  transition: 0.4s ease;
+  align-items: center;
+  text-decoration: none;
+}
+.sidebar-nav .nav-link:hover{
+  background: #fff;
+  color: #151a1d;
+
+  
+}
+.sidebar-nav .nav-link .nav-label{
+  transition: opacity 0.4s ease ;
+}
+.sidebar.collapsed .sidebar-nav .nav-link .nav-label{
+opacity: 0;
+pointer-events: none;
+
+
+}
+.he{
+  background-color: #2e8b57;
+  height: 100px;
+  padding-left: 25%;
+  color: white;
+  padding: 25px 0;
+  text-align: center;
+  
+  
+
+}
+.para{
+  padding-left: 30%;
+  
+  
+}
+.img1{
+  margin: 25px;
+ padding-left: 10%;
+
+}
+.para1{
+  width: 75%;
+  text-align: justify;
+  line-height:30px;
+  font-size: 1rem;
+}
+p{
+  margin-top: 25px;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #2e8b57;
+  color: white;
+}

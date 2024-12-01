@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recycling Guide</title>
+  <link rel="stylesheet" href="guide.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+
+  <aside class="sidebar">
+
+    <header class="sidebar-head">
+      <a href="#" class="header-logo">
+        <img src="th.jpg" alt="CoodingNepal">
+      </a>
+      <button class="toggler sidebar-toggler">
+        <span class="material-symbols-rounded">
+          arrow_back_ios
+          </span>
+      </button>
+    </header>
+    <nav class="sidebar-nav">
+      <ul class="nav-list primary-nav">
+        <li class="nav-item">
+          <a href="guide.html" class="nav-link">
+          <span class="nav-icon material-symbols-rounded">
+          dashboard
+            </span>  
+            <span class="nav-label"> Recycling Guide</span>
+          </a>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a href="quiz.html" class="nav-link">
+          <span class="nav-icon material-symbols-rounded">
+            analytics
+            </span>  
+            <span class="nav-label">Recycling Quiz</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="how.html" class="nav-link">
+          <span class="nav-icon material-symbols-rounded">
+          stars</span>  
+            <span class="nav-label"> How to Recycle</span>
+          </a>
+        </li>
+
+      </ul>
+    
+    <ul class="nav-list secondary-nav">
+      <li class="nav-item">
+        <a href="main.html" class="nav-link">
+        <span class="nav-icon material-symbols-rounded">
+        home
+          </span>  
+          <span class="nav-label"> Home</span>
+        </a>
+      </li>
+      </ul>
+      </nav>
+  </aside>       
+  <section id="guide">
+    
+    
+    <h2>Recycling Guide: Recyclable vs Non-Recyclable</h2>
+    <h3>Click the image to know</h3>
+    <div class="guide">
+      <div class="item">
+        <button onclick="showMessage(this, 'Reusable Item')">
+          <img src="plastic.jpg" alt="Plastic Bottle">
+        </button>
+        <p>Plastic</p>
+        <h3 class="show"></h3>
+      </div>
+      <div class="item">
+        <button onclick="showMessage(this, 'Non-Recyclable Item. Discard it.')">
+          <img src="vegetable.jpg" alt="Banana Peel">
+        </button>
+        <p>Vegetables</p>
+        <h3 class="show"></h3>
+      </div>
+      <div class="item">
+        <button onclick="showMessage(this, 'Reusable Item')">
+          <img src="aluminum.jpg" alt="Aluminum Can">
+        </button>
+        <p>Aluminum</p>
+        <h3 class="show"></h3>
+      </div>
+      <div class="item">
+        <button onclick="showMessage(this, 'Reusable Item')">
+          <img src="paper.jpg" alt="Paper">
+        </button>
+        <p>Paper</p>
+        <h3 class="show"></h3>
+      </div>
+      <div class="item">
+        <button onclick="showMessage(this, 'Reusable Item')">
+          <img src="glass.jpg" alt="Glass Bottle">
+        </button>
+        <p>Glass</p>
+        <h3 class="show"></h3>
+      </div>
+      <div class="item">
+        <button onclick="showMessage(this, 'Reusable Item')">
+          <img src="electronic.jpg" alt="Electronic items">
+        </button>
+        <p>Electronic items</p>
+        <h3 class="show"></h3>
+      </div>
+      <div class="item">
+        <button onclick="showMessage(this, 'Non-Recyclable Item. Discard it.')">
+          <img src="OIP.jpg" alt="Wood">
+        </button>
+        <p>Wood</p>
+        <h3 class="show"></h3>
+      </div>
+      <div class="item">
+        <button onclick="showMessage(this, 'Non-Recyclable Item. Discard it.')">
+          <img src="food.jpg" alt="Food Waste">
+        </button>
+        <p>Food Waste</p>
+        <h3 class="show"></h3>
+      </div>
+      <div class="item">
+        <button onclick="showMessage(this, 'Non-Recyclable Item. Discard it.')">
+          <img src="tire.jpg" alt="Tires">
+        </button>
+        <p>Tires</p>
+        <h3 class="show"></h3>
+      </div>
+    </div>
+    
+     
+  
+    
+  </section>
+  <script src="guide.js"></script>
+</body>
+</html>
